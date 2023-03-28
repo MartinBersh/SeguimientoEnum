@@ -40,7 +40,15 @@ public class Main {
                     break;
                 }
                 case "4":{
-                    System.out.println("ELEIMINAR");
+                    System.out.println("ELIMINAR");
+                    System.out.println("ingrese el id del registro: ");
+                    Integer id = s.nextInt();
+                    loc.borrar(loc.encontrarId(id));
+                    break;
+                }
+                case "5":{
+                    num = "5";
+                    break;
                 }
             }
         }
