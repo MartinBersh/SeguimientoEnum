@@ -9,8 +9,8 @@ public class Main {
         ILocal loc = new LocalMedotos();
         while (num != "5"){
             Scanner s = new Scanner(System.in);
-            System.out.println("\"Menu \\n 1. Agregar  \\n 2. Listar \\n 3. Editar \" +\n" +
-                    "                    \"\\n 4. Eliminar  \\n 5. Salir \\n =>\"");
+            System.out.println("\"Menu \n 1. Agregar  \n 2. Listar \n 3. Editar" +
+                    "                    \n 4. Eliminar  \n 5. Salir");
             num = s.next();
             switch (num){
                 case "1":{
@@ -36,7 +36,7 @@ public class Main {
                     String nombreLocal = s.next();
                     System.out.println("ingrese la direccion del local: ");
                     String direccion = s.next();
-                    Local actualizarLocal = new Local(id,nombreLocal,direccion);
+                    loc.actualizar(new Local(id,nombreLocal,direccion));
                     break;
                 }
                 case "4":{

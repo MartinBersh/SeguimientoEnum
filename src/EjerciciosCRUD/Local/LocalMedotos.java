@@ -1,12 +1,13 @@
 package EjerciciosCRUD.Local;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LocalMedotos implements ILocal {
     private List<Local> localList;
 
     public LocalMedotos() {
-        this.localList = localList;
+        this.localList = new ArrayList<>();
     }
 
 
@@ -36,7 +37,6 @@ public class LocalMedotos implements ILocal {
             localList.remove(datosViejos);
             localList.add(local);
         }
-
     }
 
     @Override
